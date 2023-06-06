@@ -1,0 +1,55 @@
+<div class="container">
+  <h2>Add Certificate</h2>
+  <form [formGroup]="certificateForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="certificateName">Certificate Name</label>
+      <input type="text" class="form-control" id="certificateName" formControlName="certificateName" required>
+    </div>
+    <div class="form-group">
+      <label for="issuingAuthority">Issuing Authority</label>
+      <input type="text" class="form-control" id="issuingAuthority" formControlName="issuingAuthority" required>
+    </div>
+    <div class="form-group">
+      <label for="issueDate">Issue Date</label>
+      <input type="date" class="form-control" id="issueDate" formControlName="issueDate" required>
+    </div>
+    <button type="submit" class="btn btn-primary" >Submit</button>
+    <button type="button" class="btn btn-primary" (click)="toggleCertificatesTable()">Show All</button>
+  </form>
+  
+  <!-- Certificates List -->
+  <div *ngIf="showCertificatesTable">
+  <h2>All Certificates</h2>
+  <button type="button" class="btn btn-primary" (click)="toggleCertificatesTable()">Hide Data</button>
+  <table class="table" *ngIf="certificates.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Certificate Name</th>
+        <th>Issuing Authority</th>
+        <th>Issue Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cert of certificates">
+        <td>{{ cert.id }}</td>
+        <td>{{ cert.certificateName }}</td>
+        <td>{{ cert.issuingAuthority }}</td>
+        <td>{{ cert.issueDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <h2>Show Certificate by ID</h2>
+  <div class="form-group">
+    <label for="certificateId">Certificate ID</label>
+    <input type="number" class="form-control" id="certificateId" name="certificateId" [(ngModel)]="certificateId" required>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="getCertificateById()">Show Certificate</button>
+  <div *ngIf="selectedCertificate">
+    <p>ID: {{ selectedCertificate.id }}</p>
+    <p>Name: {{ selectedCertificate.certificateName }}</p>
+    <p>Authority: {{ selectedCertificate.issuingAuthority }}</p>
+    <p>Issue Date: {{ selectedCertificate.issueDate }}</p>
+  </div>
+</div>

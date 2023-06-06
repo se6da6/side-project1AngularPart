@@ -1,0 +1,60 @@
+.home-parag{
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.home-parag p {
+    font-family: Arial;
+    font-size: large;
+    font-style: italic;
+    color: #4682B4;
+    margin-block-end: 10;
+}
+.fit-image {
+    inline-size: 200px;
+    block-size: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-inline-end: 10px;
+  }
+  button:hover{
+    background-color: green;
+    
+    
+}
+
+button {
+    padding: 10px 20px;
+    background-color:  rgb(3, 68, 68);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 4px double #cccccc; /* add this line */
+    border-radius: 10px;
+    margin-inline-end: 50;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .button-icon{
+    inline-size: 30px; 
+    block-size: 30px; 
+}
+.home-button-icon{
+  margin-inline-start: 10;
+  display: flex;
+}
+
+.about-button-icon{
+  margin-inline-end: 20 ;
+  display: flex;
+}
+
+.contact-button-icon{
+  margin-inline-start: 20;
+  display: flex;
+}

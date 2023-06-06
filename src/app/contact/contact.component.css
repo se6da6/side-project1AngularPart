@@ -1,0 +1,60 @@
+.list-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-block-end: 10px;
+  }
+  
+  .list-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-items li {
+    color: #555;
+    font-size: 16px;
+    margin-block-end: 8px;
+  }
+  
+  .list-items li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .list-items li a:hover {
+    text-decoration: underline;
+  }
+  
+  button:hover{
+    background-color: green;
+    
+    
+}
+
+button {
+    padding: 10px 20px;
+    background-color:  rgb(3, 68, 68);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 4px double #cccccc; /* add this line */
+    border-radius: 10px;
+    margin-inline-end: 50;
+}
+  
+  .button-icon{
+    inline-size: 30px; 
+    block-size: 30px; 
+}
+
+a{
+  color: crimson;
+  font-weight: bolder;
+}

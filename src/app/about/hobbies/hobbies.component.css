@@ -1,0 +1,23 @@
+
+.list-item1{
+    color: green;
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+.list-item2{
+    color:#9400D3;
+    font-size: medium;
+    font-family: sans-serif;
+
+}
+
+.list-item3{
+    color:brown;
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+a{
+    color:rgb(51, 147, 188);
+}
