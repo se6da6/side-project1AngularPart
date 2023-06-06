@@ -1,0 +1,51 @@
+button:hover{
+    background-color: green;
+    
+    
+}
+
+button {
+    padding: 10px 20px;
+    background-color:  rgb(3, 68, 68);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 4px double #cccccc; /* add this line */
+    border-radius: 10px;
+    margin-inline-end: 50;
+}
+
+
+h2{
+    color: orange;
+    font-weight: bold;
+    font-size: larger;
+    margin-block-end: 10px;
+}
+
+h3{
+    color: rgb(211, 140, 8);
+    font-size:large ;
+}
+
+a{
+    color: darkmagenta;
+    font-weight: bolder;
+}
+
+p{
+    color: #FF6347;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-block-end:8;
+    
+}
+
+
+
+.button-icon{
+    inline-size: 30px; 
+    block-size: 30px; 
+}
+
